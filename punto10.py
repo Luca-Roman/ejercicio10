@@ -8,15 +8,12 @@ ruta_notas_2 = os.path.join(ruta,"eval2.txt")
 
 with open(ruta_notas_1,encoding="utf8") as arch_notas_1:
     notas_1 = arch_notas_1.read().replace(",", "").split()
-    arch_notas_1.close()
 
 with open(ruta_notas_2,encoding="utf8") as arch_notas_2:
     notas_2= arch_notas_2.read().replace(",", "").split()
-    arch_notas_2.close()
 
 with open(ruta_nombres_1,encoding="utf8") as arch_nomb_1:
     nombres_1 = arch_nomb_1.read().replace(",", "").replace("'", "").split()
-    arch_nomb_1.close()
 
 def armar_lista (lista_nom, notas_1, notas_2) :
     """Genera una lista de tuplas, las tuplas contiene el nombre y la nota total del alumno"""
